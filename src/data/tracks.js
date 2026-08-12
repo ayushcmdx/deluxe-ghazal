@@ -1,0 +1,219 @@
+export const tracks = [
+  // --- Jagjit Singh ---
+  {
+    id: "hoshwalon-ko-khabar-kya",
+    title: "Hoshwalon Ko Khabar Kya",
+    artist: "Jagjit Singh",
+    album: "Sarfarosh",
+    year: 1999,
+    videoId: "yxoxMZyOp5U",
+  },
+  {
+    id: "tum-itna-jo-muskura-rahe-ho",
+    title: "Tum Itna Jo Muskura Rahe Ho",
+    artist: "Jagjit Singh",
+    album: "Arth",
+    year: 1982,
+    videoId: "C8eAKT-zQXk",
+  },
+  {
+    id: "hothon-se-chhoo-lo-tum",
+    title: "Hothon Se Chhoo Lo Tum",
+    artist: "Jagjit Singh",
+    album: "Prem Geet",
+    year: 1981,
+    videoId: "31f0mVT2Mvc",
+  },
+  {
+    id: "woh-kagaz-ki-kashti",
+    title: "Woh Kagaz Ki Kashti",
+    artist: "Jagjit Singh",
+    album: "Ghazal Collection",
+    year: 1980,
+    videoId: "Ji0gGNbhaQI",
+  },
+
+  // --- Mehdi Hassan ---
+  {
+    id: "ranjish-hi-sahi",
+    title: "Ranjish Hi Sahi",
+    artist: "Mehdi Hassan",
+    album: "Greatest Ghazals",
+    year: 1988,
+    videoId: "Xc6uwbXpmUY",
+  },
+  {
+    id: "gulon-mein-rang-bhare",
+    title: "Gulon Mein Rang Bhare",
+    artist: "Mehdi Hassan",
+    album: "Meri Pasand, Vol. 1",
+    year: 1978,
+    videoId: "EaNLlusLXYI",
+  },
+  {
+    id: "zindagi-mein-toh-sabhi",
+    title: "Zindagi Mein Toh Sabhi",
+    artist: "Mehdi Hassan",
+    album: "Zindagi Mein Toh Sabhi Pyar",
+    year: 1994,
+    videoId: "6Q229Ww6p54",
+  },
+  {
+    id: "mujhe-tum-nazar-se",
+    title: "Mujhe Tum Nazar Se",
+    artist: "Mehdi Hassan",
+    album: "Doraha",
+    year: 1967,
+    videoId: "OWwPWm2dZg4",
+  },
+
+  // --- Pankaj Udhas ---
+  {
+    id: "chitthi-aayi-hai",
+    title: "Chitthi Aayi Hai",
+    artist: "Pankaj Udhas",
+    album: "Naam",
+    year: 1986,
+    videoId: "v0_IRIFYC0k",
+  },
+  {
+    id: "chandi-jaisa-rang-hai-tera",
+    title: "Chandi Jaisa Rang Hai Tera",
+    artist: "Pankaj Udhas",
+    album: "Live At The Royal Albert Hall",
+    year: 1984,
+    videoId: "0pU3DAURJfs",
+  },
+  {
+    id: "na-kajre-ki-dhar",
+    title: "Na Kajre Ki Dhar",
+    artist: "Pankaj Udhas",
+    album: "Mohra",
+    year: 1994,
+    videoId: "V7AJpjFqMCk",
+  },
+  {
+    id: "aur-ahista-kijiye-baatein",
+    title: "Aur Ahista Kijiye Baatein",
+    artist: "Pankaj Udhas",
+    album: "Stolen Moments",
+    year: 1988,
+    videoId: "lvvJIyWcd2s",
+  },
+
+  // --- Ghulam Ali ---
+  {
+    id: "chupke-chupke-raat-din",
+    title: "Chupke Chupke Raat Din",
+    artist: "Ghulam Ali",
+    album: "Mehfil Mein Baar Baar",
+    year: 1976,
+    videoId: "JPORRBXIEnA",
+  },
+  {
+    id: "hungama-hai-kyon-barpa",
+    title: "Hungama Hai Kyon Barpa",
+    artist: "Ghulam Ali",
+    album: "Shaam-e-Ghazal",
+    year: 1983,
+    videoId: "oYYVB_hIAxY",
+  },
+  {
+    id: "awargi",
+    title: "Awargi",
+    artist: "Ghulam Ali",
+    album: "Shaam-e-Ghazal",
+    year: 1985,
+    videoId: "BitMSJTZ464",
+  },
+  {
+    id: "dil-mein-ek-lehar-si-uthi-hai",
+    title: "Dil Mein Ek Lehar Si Uthi Hai",
+    artist: "Ghulam Ali",
+    album: "Dilkash Ghazlen",
+    year: 1985,
+    videoId: "1dqCcxW8UGk",
+  },
+];
+
+export const artists = [
+  {
+    id: "jagjit-singh",
+    name: "Jagjit Singh",
+    title: "Ghazal Ke Baadshah",
+    years: "1941 – 2011",
+    bio: "Voh awaaz jisne ghazal ko har ghar tak pahunchaya — saral shabdon mein gehri baat kehne ka hunar.",
+    trackIds: [
+      "hoshwalon-ko-khabar-kya",
+      "tum-itna-jo-muskura-rahe-ho",
+      "hothon-se-chhoo-lo-tum",
+      "woh-kagaz-ki-kashti",
+    ],
+  },
+  {
+    id: "mehdi-hassan",
+    name: "Mehdi Hassan",
+    title: "Shehenshah-e-Ghazal",
+    years: "1927 – 2012",
+    bio: "Unki har taan mein baraso ki riyaz — Ranjish Hi Sahi jaisi ghazalein ab bhi mehfil rok deti hain.",
+    trackIds: [
+      "ranjish-hi-sahi",
+      "gulon-mein-rang-bhare",
+      "zindagi-mein-toh-sabhi",
+      "mujhe-tum-nazar-se",
+    ],
+  },
+  {
+    id: "pankaj-udhas",
+    name: "Pankaj Udhas",
+    title: "Ghazal Ke Sitaare",
+    years: "1951 – 2024",
+    bio: "Chitthi Aayi Hai se lekar mehfil ki har ghazal tak — unki awaaz mein watan aur mohabbat dono the.",
+    trackIds: [
+      "chitthi-aayi-hai",
+      "chandi-jaisa-rang-hai-tera",
+      "na-kajre-ki-dhar",
+      "aur-ahista-kijiye-baatein",
+    ],
+  },
+  {
+    id: "ghulam-ali",
+    name: "Ghulam Ali",
+    title: "Ustad-e-Ghazal",
+    years: "b. 1940",
+    bio: "Patiala gharane ke ustad, jinki Chupke Chupke aaj bhi har mehfil ki jaan hai.",
+    trackIds: [
+      "chupke-chupke-raat-din",
+      "hungama-hai-kyon-barpa",
+      "awargi",
+      "dil-mein-ek-lehar-si-uthi-hai",
+    ],
+  },
+];
+
+// One playlist per singer, generated from the artists list above.
+export const playlists = artists.map((artist) => ({
+  id: artist.id,
+  title: artist.name,
+  description: artist.bio,
+  trackIds: artist.trackIds,
+}));
+
+export const quotes = [
+  {
+    text: "Bhai saab, piche se slope cut karu ki V-shape?",
+    author: "Pappu Ustad (Chief Barber)",
+  },
+  {
+    text: "Ghazal woh hai jo dard ko bhi khoobsurat bana de.",
+    author: "Pappu Ustad (Chief Barber)",
+  },
+  {
+    text: "Kursi pe baitho, aankhein band karo — baaki hum sambhal lenge.",
+    author: "Pappu Ustad (Chief Barber)",
+  },
+  {
+    text: "Yahan baal bhi katte hain aur gham bhi.",
+    author: "Pappu Ustad (Chief Barber)",
+  },
+];

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #150e09;
+  --color-mahogany: #3e2417;
+  --color-mahogany-light: #55311f;
+  --color-rust: #7a3423;
+  --color-amber: #d89b3c;
+  --color-amber-light: #f0b85c;
+  --color-cream: #f3e6d0;
+  --color-brass: #9c7b4f;
+
+  --font-display: "Rozha One", "Noto Serif Devanagari", serif;
+  --font-body: "Karla", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-void);
+    color: var(--color-cream);
+  }
+
+  ::selection {
+    background-color: var(--color-amber);
+    color: var(--color-void);
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-amber-light);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgba(243, 230, 208, 0.06);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(243, 230, 208, 0.12);
+  }
+
+  .glass-strong {
+    background-color: rgba(21, 14, 9, 0.45);
+    backdrop-filter: blur(22px) saturate(160%);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    border: 1px solid rgba(243, 230, 208, 0.1);
+  }
+
+  .glass-amber {
+    background-color: rgba(216, 155, 60, 0.14);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(216, 155, 60, 0.4);
+  }
+
+  .text-shadow-marquee {
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.65);
+  }
+
+  .grain::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 40;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .vignette::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 30;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 40%,
+      rgba(21, 14, 9, 0.75) 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
