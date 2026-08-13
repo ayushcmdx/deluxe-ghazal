@@ -7,6 +7,9 @@ export const tracks = [
     album: "Sarfarosh",
     year: 1999,
     videoId: "yxoxMZyOp5U",
+    featured: true,
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "tum-itna-jo-muskura-rahe-ho",
@@ -15,6 +18,8 @@ export const tracks = [
     album: "Arth",
     year: 1982,
     videoId: "C8eAKT-zQXk",
+    moods: ["Judaai"],
+    lyrics: "",
   },
   {
     id: "hothon-se-chhoo-lo-tum",
@@ -23,6 +28,8 @@ export const tracks = [
     album: "Prem Geet",
     year: 1981,
     videoId: "31f0mVT2Mvc",
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "woh-kagaz-ki-kashti",
@@ -30,7 +37,9 @@ export const tracks = [
     artist: "Jagjit Singh",
     album: "Ghazal Collection",
     year: 1980,
-    videoId: "Ji0gGNbhaQI",
+    videoId: "CbDQ8yjDcx8",
+    moods: ["Sukoon"],
+    lyrics: "",
   },
 
   // --- Mehdi Hassan ---
@@ -41,6 +50,9 @@ export const tracks = [
     album: "Greatest Ghazals",
     year: 1988,
     videoId: "Xc6uwbXpmUY",
+    featured: true,
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "gulon-mein-rang-bhare",
@@ -49,6 +61,8 @@ export const tracks = [
     album: "Meri Pasand, Vol. 1",
     year: 1978,
     videoId: "EaNLlusLXYI",
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "zindagi-mein-toh-sabhi",
@@ -57,14 +71,18 @@ export const tracks = [
     album: "Zindagi Mein Toh Sabhi Pyar",
     year: 1994,
     videoId: "6Q229Ww6p54",
+    moods: ["Sukoon"],
+    lyrics: "",
   },
   {
-    id: "mujhe-tum-nazar-se",
-    title: "Mujhe Tum Nazar Se",
+    id: "rafta-rafta-woh-meri",
+    title: "Rafta Rafta Woh Meri Hasti Ka",
     artist: "Mehdi Hassan",
-    album: "Doraha",
-    year: 1967,
-    videoId: "OWwPWm2dZg4",
+    album: "Zeenat",
+    year: 1975,
+    videoId: "Y01l7QTtIoE",
+    moods: ["Ishq"],
+    lyrics: "",
   },
 
   // --- Pankaj Udhas ---
@@ -75,6 +93,9 @@ export const tracks = [
     album: "Naam",
     year: 1986,
     videoId: "v0_IRIFYC0k",
+    featured: true,
+    moods: ["Judaai"],
+    lyrics: "",
   },
   {
     id: "chandi-jaisa-rang-hai-tera",
@@ -83,6 +104,8 @@ export const tracks = [
     album: "Live At The Royal Albert Hall",
     year: 1984,
     videoId: "0pU3DAURJfs",
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "na-kajre-ki-dhar",
@@ -91,6 +114,8 @@ export const tracks = [
     album: "Mohra",
     year: 1994,
     videoId: "V7AJpjFqMCk",
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "aur-ahista-kijiye-baatein",
@@ -99,6 +124,8 @@ export const tracks = [
     album: "Stolen Moments",
     year: 1988,
     videoId: "lvvJIyWcd2s",
+    moods: ["Ishq"],
+    lyrics: "",
   },
 
   // --- Ghulam Ali ---
@@ -109,6 +136,9 @@ export const tracks = [
     album: "Mehfil Mein Baar Baar",
     year: 1976,
     videoId: "JPORRBXIEnA",
+    featured: true,
+    moods: ["Ishq"],
+    lyrics: "",
   },
   {
     id: "hungama-hai-kyon-barpa",
@@ -116,7 +146,9 @@ export const tracks = [
     artist: "Ghulam Ali",
     album: "Shaam-e-Ghazal",
     year: 1983,
-    videoId: "oYYVB_hIAxY",
+    videoId: "klJz_PbhXcQ",
+    moods: ["Sukoon"],
+    lyrics: "",
   },
   {
     id: "awargi",
@@ -124,7 +156,9 @@ export const tracks = [
     artist: "Ghulam Ali",
     album: "Shaam-e-Ghazal",
     year: 1985,
-    videoId: "BitMSJTZ464",
+    videoId: "pZWqn3BC17Q",
+    moods: ["Judaai"],
+    lyrics: "",
   },
   {
     id: "dil-mein-ek-lehar-si-uthi-hai",
@@ -133,6 +167,8 @@ export const tracks = [
     album: "Dilkash Ghazlen",
     year: 1985,
     videoId: "1dqCcxW8UGk",
+    moods: ["Ishq"],
+    lyrics: "",
   },
 ];
 
@@ -160,7 +196,7 @@ export const artists = [
       "ranjish-hi-sahi",
       "gulon-mein-rang-bhare",
       "zindagi-mein-toh-sabhi",
-      "mujhe-tum-nazar-se",
+      "rafta-rafta-woh-meri",
     ],
   },
   {

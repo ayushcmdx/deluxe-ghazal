@@ -14,6 +14,8 @@ export default function ArtistDetail() {
     .map((id) => tracks.find((t) => t.id === id))
     .filter(Boolean);
 
+  const otherArtists = artists.filter((a) => a.id !== artist.id);
+
   return (
     <div className="mx-auto max-w-2xl">
       <Link
@@ -36,6 +38,38 @@ export default function ArtistDetail() {
           <TrackRow key={track.id} track={track} />
         ))}
       </div>
+
+      {otherArtists.length > 0 && (
+        <div className="mt-12">
+          <h2 className="mb-4 font-display text-xl text-cream sm:text-2xl">
+            More Like This
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {otherArtists.map((other) => {
+              const sampleTrack = tracks.find((t) => t.id === other.trackIds[0]);
+              return (
+                <Link
+                  key={other.id}
+                  to={`/artists/${other.id}`}
+                  className="glass group rounded-xl p-4 transition hover:border-amber/40"
+                >
+                  <p className="font-display text-lg text-cream transition group-hover:text-amber-light">
+                    {other.name}
+                  </p>
+                  <p className="mt-1 text-xs tracking-wide text-amber uppercase">
+                    {other.title}
+                  </p>
+                  {sampleTrack && (
+                    <p className="mt-2 truncate text-xs text-brass">
+                      {sampleTrack.title}
+                    </p>
+                  )}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="grain vignette relative isolate min-h-screen bg-void">
       <div
         className="fixed inset-0 z-0 bg-cover bg-center opacity-70"
-        style={{ backgroundImage: "url('/images/salon-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/Ghazal-bg.jpg')" }}
       />
       <div className="fixed inset-0 z-0 bg-gradient-to-b from-void/15 via-void/35 to-void/70" />
 

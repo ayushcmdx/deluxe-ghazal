@@ -1,2 +1,2 @@
-Apni background image is folder mein "salon-bg.jpg" naam se daalo.
-Layout.jsx isko automatically use karega: /images/salon-bg.jpg
+Apni background image is folder mein "Ghazal-bg.jpg" naam se daalo.
+Layout.jsx isko automatically use karega: /images/Ghazal-bg.jpg

@@ -1,8 +1,8 @@
-import { Pause, Play } from "lucide-react";
+import { ListPlus, Pause, Play } from "lucide-react";
 import { usePlayer } from "../context/PlayerContext";
 
 export default function TrackRow({ track }) {
-  const { currentTrack, isPlaying, playTrack, togglePlay } = usePlayer();
+  const { currentTrack, isPlaying, playTrack, togglePlay, addToQueue } = usePlayer();
   const isCurrent = currentTrack.id === track.id;
 
   function handleClick() {
@@ -14,10 +14,17 @@ export default function TrackRow({ track }) {
   }
 
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
       onClick={handleClick}
-      className={`flex w-full items-center gap-4 rounded-xl px-4 py-3 text-left transition ${
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          handleClick();
+        }
+      }}
+      className={`flex w-full cursor-pointer items-center gap-4 rounded-xl px-4 py-3 text-left transition ${
         isCurrent ? "glass-amber" : "glass hover:border-cream/25"
       }`}
     >
@@ -41,6 +48,19 @@ export default function TrackRow({ track }) {
           {track.artist} · {track.album} · {track.year}
         </span>
       </span>
-    </button>
+
+      <button
+        type="button"
+        onClick={(event) => {
+          event.stopPropagation();
+          addToQueue(track);
+        }}
+        aria-label="Add to queue"
+        title="Add to queue"
+        className="shrink-0 rounded-full p-2 text-cream/60 transition hover:bg-white/10 hover:text-amber-light"
+      >
+        <ListPlus size={18} />
+      </button>
+    </div>
   );
 }

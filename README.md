@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="./public/images/mehfil-bg.jpg" alt="Delux Gazhal — Mehfil Banner" width="100%" />
+<img src="./public/images/mehfil-bg.jpg" alt="Delux Ghazal — Mehfil Banner" width="100%" />
 
-# 🪷 Delux Gazhal
+# 🪷 Delux Ghazal
 
 ### *Kursi pe baitho, mehfil jamao — har ghazal ke saath ek yaadgar shaam.*
 
@@ -19,7 +19,7 @@
 
 ## ✨ About
 
-**Delux Gazhal** is a warm, lantern-lit tribute to the legends of ghazal — Jagjit Singh, Ghulam Ali, and the mehfils they built. It's not just a music player; it's a *vibe*: rotating couplets and quotes, curated playlists, and every track playing like it's part of the evening's mehfil.
+**Delux Ghazal** is a warm, lantern-lit tribute to the legends of ghazal — Jagjit Singh, Ghulam Ali, and the mehfils they built. It's not just a music player; it's a *vibe*: rotating couplets and quotes, curated playlists, and every track playing like it's part of the evening's mehfil.
 
 > *"Har ghazal ek kahani hai, bas sunne ka sabr chahiye."*
 
@@ -69,7 +69,7 @@ Output lands in `dist/`.
 ## 📁 Project Structure
 
 ```
-delux-gazhal/
+delux-Ghazal/
 ├── public/
 │   └── images/
 │       └── mehfil-bg.jpg         # your mehfil backdrop

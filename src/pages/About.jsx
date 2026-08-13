@@ -7,13 +7,13 @@ export default function About() {
 
       <div className="space-y-5 text-cream/80">
         <p>
-          Delux Gazhal koi aam salon nahi. Yahan kainchi ki awaaz aur harmonium
-          ke sur saath-saath chalte hain. Har kursi ek mehfil hai, har baal
+          Delux Ghazal koi aam Ghazal nahi. Yahan kainchi ki awaaz aur harmonium
+          ke sur saath-saath chalte hain. Har kursi ek mehfil hai, har pal
           kaatna ek riyaz.
         </p>
         <p>
           Pappu Ustad, hamare Chief Barber, kehte hain — &ldquo;Style sirf
-          baalon ki nahi, mizaaz ki bhi hoti hai.&rdquo; Isi soch se yeh jagah
+          palon ki nahi, mizaaz ki bhi hoti hai.&rdquo; Isi soch se yeh jagah
           bani: purani ghazalon ki gunj mein nayi kahaniyan.
         </p>
         <p>
